@@ -1,0 +1,12 @@
+#loading {
+    display: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#result {
+    margin-top: 20px;
+}
+#downloadButton {
+    display: none;
+    margin-top: 10px;
+}

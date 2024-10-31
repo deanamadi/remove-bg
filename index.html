@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer ></script>
-</head>
-<body>
-    bg remover 
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <input type="file" id="imageInput" accept="image/*" />
+    <button onclick="removeBackground()">Upload Image</button>
+    <div id="loading">Processing your image...</div>
+    <div id="result">
+      <img
+        id="outputImage"
+        alt="Processed Image"
+        style="max-width: 100%; display: none"
+      />
+    </div>
+    <button id="downloadButton" onclick="downloadImage()">Download</button>
+  </body>
 </html>
